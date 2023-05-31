@@ -6,5 +6,5 @@ import com.projeto.integrado.entity.UserEmail;
 import com.projeto.integrado.entity.User;
 
 public interface EmailRepository extends JpaRepository<User, Integer> {
-	Optional<Email> findByEmail(User UserEmail);
+	Optional<Email> findByEmail(String userEmail);
 }
