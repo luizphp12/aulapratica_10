@@ -5,6 +5,6 @@ import org.springframework.data.jpa.repository.JpaRepository;
 import com.projeto.integrado.entity.Projeto;
 import com.projeto.integrado.entity.ProjetoStatus;
 
-public interface ProjetoStatusRepository extends JpaRepository<ProjetoStatus, Integer> {
+public interface ProjetoStatusRepository extends JpaRepository<Projeto, Integer> {
 	Optional<Status> findByProjetoStatus(String projetoStatus);
 }
