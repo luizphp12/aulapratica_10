@@ -6,5 +6,5 @@ import com.projeto.integrado.entity.UsuarioNome;
 import com.projeto.integrado.entity.User;
 
 public interface NomeRepository extends JpaRepository<User, Integer> {
-	Optional<Nome> findByNome(User UsuarioNome);
+	Optional<Nome> findByUsuarioNome(String usuarioNome);
 }
